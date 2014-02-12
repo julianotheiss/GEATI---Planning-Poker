@@ -7,4 +7,5 @@
     <preference name="fullscreen" value="true"/>
     <preference name="webviewbounce" value="true"/>
     <preference name="permissions" value="none" />
+    <preference name="orientation" value="portait" />
 </widget>
