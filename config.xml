@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.geati.poker" version="1.0.0">
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.geati.poker"
+    version   = "1.0.0">
+    
     <name>GEATI Planning Poker</name>
-    <description>Planning Poker Scrum desenvolvido pelo grupo GEATI</description>
-    <author email="juliano.theiss@gmail.com" href="http://www.geaticom">julianotheiss</author>
-    <access origin="*"/>
+    <description>
+        Planning Poker Scrum desenvolvido pelo grupo GEATI
+    </description>
+    <author email="juliano.theiss@gmail.com" href="http://www.geaticom">
+        julianotheiss
+    </author>
+    
+    <gap:platform name="android" />
+
+    <preference name="orientation" value="portrait" />
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="permissions" value="none"/>
+    <preference name="exit-on-suspend" value="true" /> 
+    <preference name="target-device" value="handset" /> 
     <preference name="fullscreen" value="true"/>
     <preference name="webviewbounce" value="true"/>
-    <preference name="permissions" value="none" />
-    <preference name="orientation" value="portait" />
+    <access origin="*"/>
+    
+    <gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="icon.png" />
+    
+    
 </widget>
