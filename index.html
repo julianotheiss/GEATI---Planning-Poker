@@ -6,6 +6,9 @@
   <title>Geati</title>
   <link rel="stylesheet" href="css/idangerous.swiper.css">
   <style>
+#pop{display:none;position:absolute;top:10%;padding:0px;width:100%;height:100%;border:0px solid #d0d0d0}
+</style>
+  <style>
 /* Demo Styles */
 html {
   height: 100%;
@@ -177,23 +180,23 @@ background-size: 40%; color: black; font-size: 20%; border-radius: 10px; box-sha
           
       </div>
     </div>
-                   <a href="#popupCreditos" data-rel="popup" data-role="button" class="ui-icon-alt" data-inline="true" data-transition="pop" data-icon="info" data-theme="g" data-iconpos="notext" style="position:absolute;bottom:0px;right:10px;">creditos</a>
+    <a href="#" onclick="document.getElementById('pop').style.display='block';" style="position:absolute;bottom:0px;right:10px;">Creditos</a>
+                  
     <div class="pagination"></div>
-
+ <div id="pop">
+<a href="#" onclick="document.getElementById('pop').style.display='none';">[X]</a>
+<br />
+  <img src="img/creditos.jpg" width="80%">
+ 
+</div>
 
   </div>
     
-   <div data-role="popup" id="popupCreditos">
-      <p>Creditos</p> 
-      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="img/creditos.jpg" style="width:90%;height:90%;" alt="Skaret View">
-    </div>
+  
 
   <script src="js/jquery-1.10.1.min.js"></script>
   <script src="js/idangerous.swiper-2.1.min.js"></script>
-   <!-- JQUERY MOBILE -->
-  <link rel="stylesheet" href="css/jqmobile.css">
-  <script src="js/jqmobile.js"></script>
-  <!-- JQUERY MOBILE -->
+ 
   <script>
   var mySwiper = new Swiper('.swiper-container',{
     pagination: '.pagination',
